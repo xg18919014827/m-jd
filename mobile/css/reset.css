@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+/*..........common css.......*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ol,li {
+	list-style: none;	
+}
+a {
+	text-decoration: none;	
+	color: #000;
+	tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent;
+}
+a:hover {
+	text-decoration: none;
+}
+input,textarea {
+	border: none;
+	outline: none;
+	resize: none;
+	-webkit-appearance: transparent;	
+}
+/*common css*/
+body {
+	width: 100%;
+	background-color: #eee;	
+}
+.f_left {
+	float: left;	
+}
+.f_right {
+	float: right;	
+}
+.clearFix::before,
+.clearFix::after {
+	content: '';
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;	
+}
+
+
+
+
+
+

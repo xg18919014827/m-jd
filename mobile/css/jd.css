@@ -1,0 +1,253 @@
+@charset "utf-8";
+/* CSS Document */
+/*顶部搜索*/
+.container-fluid {
+	padding:0;
+	margin: 45px 0 55px 0;
+}
+#wrapper {
+	position: absolute;
+	top:0;
+	left: 0;
+	overflow: hidden;
+}
+.jd_search {
+	width: 100%;
+	height: 45px;	
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	background-color: #F00;
+	opacity: 0.85;
+}
+.jd_search .jd_search_box {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-cotent: space-between;	
+}
+.jd_search .jd_search_box a{
+	height: 40px;
+}
+.jd_search .jd_search_box a.jd_logo{
+	width: 80px;
+	background: url(../images/sprites.png) 3px -103px/200px 200px;
+	margin-top: 2.5px;
+}
+.jd_search .jd_search_box a.jd_login{
+	width: 50px;
+	line-height: 40px;	
+	text-align: center;
+	margin-top: 2.5px;
+}
+.jd_search .jd_search_box form{
+	width: 100%;	
+	padding: 0 10px;
+	position: relative;
+}
+.jd_search .jd_search_box form span{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 12.5px;
+	left: 15px;
+	background: url(../images/sprites.png) -82px 0/200px 200px;
+	
+}
+.jd_search .jd_search_box form input{
+	height: 30px;
+	width: 100%;
+	margin-top: 7.5px;
+	border-radius: 10px;
+	padding-left: 30px;	
+}
+/*轮播图*/
+.jd_banner {
+	width: 100%;
+	position: relative;
+	overflow: hidden;	
+	margin-bottom: -10px;
+}
+.jd_banner ul:first-child{
+	width: 1000%;
+	transform: translateX(-10%);
+}
+.jd_banner ul:first-child li{
+	float: left;
+	width: 10%;
+}
+.jd_banner ul:first-child li a{
+	width: 100%;
+	display: block;		
+}
+.jd_banner ul:first-child li a img{
+	width: 100%;
+	display: block;	
+}
+.jd_banner ul:last-child{
+	margin-right: 10px;	
+	position:absolute;
+	left: 50%;
+	bottom: 10px;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	padding: 5px 0;
+	z-index: 999;
+}
+.jd_banner ul:last-child li{	
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+	border: 1px solid #FFF;
+	float: left;
+	margin: 0 5px;
+}
+.now {
+	background-color: #FFF;	
+}
+/*导航条*/
+.jd_nav{
+	width: 100%;	
+	background-color:#FFF;
+}
+.jd_nav ul{
+	width: 100%;
+	padding: 10px;	
+}
+.jd_nav ul li{
+	width: 25%;
+	float: left;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.jd_nav ul li a{
+	display: block;	
+}
+.jd_nav ul li a img{
+	display: block;	
+	width: 40px;
+	margin: 0 auto;
+}
+.jd_nav ul li a p{
+	font-size: 12px;
+	margin-top: 5px;	
+}
+/*产品模块*/
+.jd_product{
+	width: 100%;
+	margin-top: 10px;	
+}
+.jd_product_box {
+	width: 100%;	
+	background-color:#FFF;
+}
+.tit {
+	width: 100%;
+	height: 30px;
+	position: relative;	
+	padding-left: 30px;	
+	line-height: 30px;
+}
+.time_down .tit .f_left .icon::before {
+	content: '';
+	width: 20px;
+	height: 25px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	background: url(../images/seckill-icon.png) 0 0/20px 25px;
+}
+.time_down .tit .f_left .name {	
+	float: left;
+	margin: 0 5px;
+}
+.time_down .tit .f_left .time {
+	float: left;	
+}
+.time_down .tit .f_left .time span{
+}
+.m_r10 {
+	margin-right: 10px;	
+}
+.con {
+	width: 100%;	
+}
+.con ul {
+	width: 100%;	
+}
+.con ul li{
+	width: 33.3333%;
+	float: left;
+	text-align: center;
+	
+}
+.con ul li a{
+	display: block;
+	width: 100%;
+	padding: 0 10px; 
+	border-right: 1px solid #666;		
+}
+.con ul li:last-child a{
+	border-right: none;		 
+}
+.con ul li a img{
+	width: 100%;	
+}
+.con ul li .newprice{
+	color: red;	
+}
+.con ul li .oldprice{
+	text-decoration: line-through;	
+}
+/*京东超市*/
+.con a {
+	width: 50%;	
+}
+.con a img{
+	display: block;	
+	width: 100%;
+}
+.b_r {
+	border-right: 1px solid #ccc;	
+}
+.b_l {
+	border-left: 1px solid #ccc;		
+}
+.b_b {
+	border-bottom: 1px solid #ccc;	
+}	
+.tit h3::before {
+	content: '';
+	display: inline-block;
+	width: 3px;
+	height: 15px;
+	background-color: #F00;
+	margin-right: 5px;	
+}
+.jd_product_box h3{
+	margin-top:0;
+}
+.jd_product_box {
+	margin-top: 10px;
+}
+/*底部选项卡*/
+.jd_navbar{
+	height: 55px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #F00;
+}
+.jd_navbar ul{
+	width: 100%;	
+}
+.jd_navbar ul li{
+	float: left;
+	width: 25%;
+	text-align: center;
+	padding-top: 10.5px;
+}
+.jd_navbar ul li a span{
+	display: block;
+}
